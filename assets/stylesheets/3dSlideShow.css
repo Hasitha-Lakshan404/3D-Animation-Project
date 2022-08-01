@@ -3,3 +3,10 @@ Project :3D_ProjectSlideShow
 Date :8/1/2022
 Time :12:44 PM
 */
+
+.slideshow{
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 700px;
+    perspective: 1000px;
+}
