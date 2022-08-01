@@ -4,9 +4,31 @@ Date :8/1/2022
 Time :12:44 PM
 */
 
+/*=======define the styles for the main container of the slideshow=======*/
 .slideshow{
     margin: 0 auto;
     padding-top: 50px;
     height: 700px;
     perspective: 1000px;
+}
+
+
+.content{
+    margin: auto;
+    width: 150px;
+    perspective: 1000px;
+    position:relative;
+    padding-top: 80px;
+    transform-style: preserve-3d;
+}
+.slider-content{
+    width: 100%;
+    position:absolute;
+    float:right;
+    animation: rotate 15s infinite linear;
+    transform-style: preserve-3d;
+}
+.slider-content:hover{
+    cursor: pointer;
+    animation-play-state: paused;
 }
