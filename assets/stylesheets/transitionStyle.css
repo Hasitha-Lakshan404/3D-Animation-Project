@@ -1,0 +1,249 @@
+/**@author : Hasitha Lakshan
+Project :3D_ProjectSlideShow
+Date :8/3/2022
+Time :11:01 AM
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+/*
+
+div {
+    width: 140px;
+    height: 64px;
+    border: 2px solid red;
+    transition: 3s all linear;
+}
+div:hover {
+    transition-duration: .5s;   !*!*======want it=========*!*!
+    border: 2px solid blue;
+}
+*/
+/*
+
+.g-item {
+    display: grid;
+    !*transition: 999999s;*!
+}
+.g-item:hover {
+    !*background: #000;*!
+    !*transition: 0s;*!
+}*/
+
+
+/*
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+
+    !*background-color: #2196F3;*!
+    !*padding: 10px;*!
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    transition: 2s;
+}
+.grid-item:hover{
+    background: #000;
+    transition: 0s;
+}*/
+
+
+/*==========start word writing==========*/
+/*
+body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    caret-color: transparent;
+}
+
+.g-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 2px solid #333;
+}
+
+.g-box {
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.g-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+.g-wrap:active {
+    display: none;
+}
+
+.g-btn {
+    position: absolute;
+    top: -36px;
+    border: 1px solid #666;
+    padding: 5px;
+    cursor: pointer;
+    background: #fff;
+}
+.g-btn:active {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    filter: contrast(0.8);
+}
+
+.g-btn:active ~ .g-box .g-item {
+    transition: 0s;
+    display: none;
+}
+
+.g-row {
+    width: 500px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.g-item {
+    flex-grow: 1;
+    transition: 999999s;
+}
+
+.g-item:hover {
+    background: #000;
+    transition: 0s;
+}
+*/
+
+
+/*end word writing*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: black;
+}
+
+.card {
+    width: 800px;
+    height: 800px;
+    padding: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+    filter: blur(15px) contrast(30);
+}
+.card .snow {
+    position: relative;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+}
+.card .snow::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background: white;
+    transition: 30s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card .snow:hover::after {
+    transform: scale(0);
+    transition-duration: 0.3s;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    color: white;
+    font-family: Lato, sans-serif;
+    font-size: 4em;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    transform: translate(-47%, -160%);
+    pointer-events: none;
+    filter: blur(1px) contrast(20);
+}
+
+/*
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: black;
+}
+
+.card {
+    $snow-size: 3em;
+    width: $snow-size * 10;
+    height: $snow-size * 10;
+    padding: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+    filter: blur(15px) contrast(30);
+
+.snow {
+    position: relative;
+    width: $snow-size;
+    height: $snow-size;
+    border-radius: 100%;
+
+&::after {
+     position: absolute;
+     content: "";
+     left: 0;
+     width: inherit;
+     height: inherit;
+     background: white;
+     transition: 30s cubic-bezier(0.19, 1, 0.22, 1);
+ }
+
+&:hover::after {
+     transform: scale(0);
+     transition-duration: 0.3s;
+ }
+}
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    color: white;
+    font-family: Lato, sans-serif;
+    font-size: 4em;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    transform: translate(-47%, -160%);
+    pointer-events: none;
+    filter: blur(1px) contrast(20);
+}
+*/
